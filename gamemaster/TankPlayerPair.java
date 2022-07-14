@@ -16,4 +16,8 @@ public class TankPlayerPair {
     public TankPlayerPair updateByPlayer(Player newPlayer){
         return new TankPlayerPair(this.tank,newPlayer);
     }
+
+    public String toString(){
+        return tank.toString();
+    }
 }

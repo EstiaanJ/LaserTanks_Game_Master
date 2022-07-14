@@ -26,11 +26,11 @@ public class MQTT_Publish {
         int qos = 0;
 
         try {
-            MqttConnectOptions connOpts = new MqttConnectOptions();
-            connOpts.setCleanSession(true);
+            //MqttConnectOptions connOpts = new MqttConnectOptions();
+            //connOpts.setCleanSession(true);
             //this.mqttClient.connect(connOpts);
             MqttMessage mqttMessage = new MqttMessage(message.getBytes());
-            mqttMessage.setQos(qos);
+            //mqttMessage.setQos(qos);
             this.mqttClient.publish(topic, mqttMessage);
             //this.mqttClient.disconnect();
 

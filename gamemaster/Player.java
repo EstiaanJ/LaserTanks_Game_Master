@@ -21,7 +21,7 @@ public class Player {
 
 
     public static Player createPlayer(String playerName, int playerNumber){
-        return new Player(playerName,playerNumber,0,new Tank(100,true, Upgrade.defaultUpgrade(),playerNumber));
+        return new Player(playerName,playerNumber,0,new Tank(100,true, Powerup.defaultUpgrade(),playerNumber));
     }
 
 
